@@ -1,15 +1,13 @@
 import traceback
-import sys
+
 from numpy import*
-import time
 import matplotlib.pyplot as plt
 import pandas as pd
 
 
 class CMain:
 
-    def __init_plants__(self):
-        self.plants = []
+    def __init_params__(self):
         # Щирина линии
         self.lineWidth = 20
         # Скорость
@@ -108,8 +106,8 @@ class CMain:
     # Основной метод программы.                                                                         *
     # ***************************************************************************************************
     def main(self):
-        self.__init_plants__()
-        ti = time.clock()
+        self.__init_params__()
+        # ti = time.clock()
 
         # Начальное расположение
         x = 0
